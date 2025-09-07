@@ -1,0 +1,129 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uzma Parveen | Web Folio</title>
+  <style>
+    /* Basic Reset */
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {font-family: Arial, sans-serif; line-height: 1.6; background: #f9f9f9; color: #333;}
+    a {text-decoration: none; color: inherit;}
+    
+    /* Navbar */
+    header {background: #222; color: #fff; padding: 15px 0; position: fixed; width: 100%; top: 0; z-index: 1000;}
+    nav {display: flex; justify-content: center; gap: 30px;}
+    nav a {color: #fff; font-weight: bold; transition: 0.3s;}
+    nav a:hover {color: #ff9800;}
+
+    /* Sections */
+    section {padding: 80px 20px; max-width: 1000px; margin: auto;}
+    h1, h2 {color: #222; margin-bottom: 20px;}
+    p {margin-bottom: 15px;}
+
+    /* Home */
+    #home {display: flex; flex-direction: column; align-items: center; text-align: center;}
+    #home h1 {font-size: 2.5rem;}
+    #home p {font-size: 1.2rem;}
+
+    /* About */
+    #about {background: #fff; border-radius: 10px; padding: 30px; box-shadow: 0 3px 8px rgba(0,0,0,0.1);}
+    #about ul {list-style: none; padding: 0;}
+    #about li {margin-bottom: 10px;}
+
+    /* Skills & Projects */
+    #skills {background: #f0f0f0; border-radius: 10px; padding: 30px;}
+    .card {background: #fff; padding: 20px; border-radius: 10px; margin: 15px 0; box-shadow: 0 3px 6px rgba(0,0,0,0.1);}
+
+    /* Contact */
+    #contact form {display: flex; flex-direction: column; gap: 15px;}
+    input, textarea {padding: 10px; border: 1px solid #ccc; border-radius: 5px; width: 100%;}
+    button {padding: 12px; background: #ff9800; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; color: #fff;}
+    button:hover {background: #e68900;}
+
+    /* Footer */
+    footer {text-align: center; padding: 20px; background: #222; color: #fff; margin-top: 40px;}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills & Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Hi, I'm Uzma Parveen</h1>
+    <p>Student of BCA at MMES Women’s Arts and Science College</p>
+    <p>Welcome to my Digital Portfolio</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <ul>
+      <li><strong>Name:</strong> Uzma Parveen S</li>
+      <li><strong>Register No:</strong> 34624U09098</li>
+      <li><strong>NM ID:</strong> ASTVU346M24323</li>
+      <li><strong>Department:</strong> BCA</li>
+      <li><strong>College:</strong> MMES Women’s Arts and Science College, Thiruvalluvar University</li>
+    </ul>
+  </section>
+
+  <!-- Skills & Projects Section -->
+  <section id="skills">
+    <h2>Skills & Projects</h2>
+    <div class="card">
+      <h3>Project Overview</h3>
+      <p>A personal website showcasing academic, technical, and creative work. Responsive and user-friendly design for career opportunities.</p>
+    </div>
+    <div class="card">
+      <h3>Technologies</h3>
+      <p>HTML, CSS, JavaScript</p>
+    </div>
+    <div class="card">
+      <h3>Features</h3>
+      <ul>
+        <li>Responsive Design</li>
+        <li>Interactive Project Showcase</li>
+        <li>Contact Form Integration</li>
+        <li>Easy Navigation</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Uzma Parveen. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Simple form handling
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you for reaching out, Uzma will get back to you soon!");
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
